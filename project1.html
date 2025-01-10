@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Coffee</title>
+    <link rel="stylesheet" href="sy.css">
+</head>
+<body>
+    <h1 id="title">Cape Coffee Survey</h1>
+    <p id="description">Welcome to Cape Coffee Survey! help us improve our product and service </p>
+    <form id="survey-form" method="post" action="http:/registerdemo.freecodecamp.org">
+        <label id="name-label" for="Name">Name</label>
+        <input id="name" type="text" name="name" placeholder="e.g St.John"  required >
+       
+        <label id="email-label"  for="Email">Email</label>
+        <input id="email" type="email" name="email" placeholder="DIO23@gmail.com"  required>
+       
+        <label id="number-label" for="Age">Age in years(Optional)</label>
+        <input id="number" type="number" name="Age" min="12" max="89" placeholder="e.g 17">
+       
+       <div class="inner">
+            <fieldset>
+               <legend>How often do you drink coffee?</legend> 
+               <select id="dropdown" name="Dropdown" >
+               <option value="1">Select (option)</option>
+               <option value="2">Daily</option>
+               <option value="3">Weekly</option>
+             
+            </select>
+            </fieldset><br>
+            <Fieldset> 
+                <legend>How satisfied are with the taste of our coffee?</legend>
+                <label for="F-Attempt">Very satisfied</label>
+                <input id="attempt" type="radio" name="taste" value="First attempt" checked >
+
+               
+              
+                <label for="R-Module">Unsatisfied</label>
+                <input id="attempt" type="radio" name="taste" value="Repeating Module">
+             </Fieldset><br>
+             <Fieldset><legend>What is your preferred type of coffee?</legend>
+
+                
+                <label for="lecture"><input id="type" type="checkbox" >Cold Brew</label>
+               
+                <label for="lecture"><input  id="type" type="checkbox" >Cappuccino</label>
+               
+                <label for="lecture"><input  id="type"type="checkbox" >Black Coffee</label>
+                
+            </Fieldset><br><br><br><br>
+            <div class="comm">
+             <fieldset><legend>Additional comments</legend>
+                <textarea name="Comments" id="comments"  placeholder="Cape Coffee has Excellent service...." rows="3" cols="46"></textarea>
+               </fieldset> 
+            </div>
+               <input type="submit" >
+            </div>
+
+    </form>
+</body>
+</html>
