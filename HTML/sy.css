@@ -1,0 +1,38 @@
+#title, #description{
+    text-align: center;
+    
+}
+label{
+    display: block;
+    position: relative;
+    left: 520px;
+   
+}
+#name,#email,#number,#dropdown,#attempt,#comments{
+     
+    position: absolute;
+    left: 513px; 
+    padding: 10px;
+    
+}
+#name,#email{
+    margin-bottom: 15px;
+    width: 555px;
+    border-radius: 20px;
+  }
+fieldset{
+    border: none;
+}
+legend{
+    position: relative;
+    left:500px;
+    top:27px;
+
+}
+*{
+    box-sizing: border-box;
+  
+}
+#name-label,#email-label{
+    margin-bottom: 5px;
+}

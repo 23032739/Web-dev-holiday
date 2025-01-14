@@ -1,0 +1,240 @@
+.inner1 label{
+    display: inline-block;
+    width:190px ;
+    padding-bottom: 5px;
+
+}
+
+
+fieldset{
+    border: none;
+}
+legend{
+  font-size:x-large;  
+  color: rgb(255, 255, 255);
+  padding-bottom: 8px;
+
+}
+body{
+    margin-left: 600px;
+    background-color:rgba(13, 78, 81, 0.724) ;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    
+
+
+}
+h1{
+    font-size:299%;
+    margin-left: -40px;
+    color: white;
+}
+p{
+    font-size: larger;
+    margin-left: -149px;
+    color: white;
+
+   
+}
+.perso label{
+    display: block;
+    margin-left: -85px
+    
+
+}
+.perso input{
+  position: relative; 
+    width: 500px;
+    margin-left: -90px;
+    border-radius: 6px;
+    padding: 5px;
+    z-index: 2; 
+}
+
+input{
+    background-color: rgb(7, 65, 81);
+
+}
+select{
+    padding: 5px;
+
+}
+textarea{
+    background-color: rgb(207, 204, 204);
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-top: 200px solid  rgb(7, 65, 81);
+    border-right: 150px solid transparent;
+    position: absolute;
+    left: 0px;
+    top: 0%;
+    box-shadow: 0 0 20px white;
+    
+  }
+  .triangle2{
+    width: 0;
+    height: 0;
+    border-top: 200px solid  rgb(7, 65, 81);
+    border-left: 175px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: 0 0 20px white;
+
+  }
+  .corr{
+    position: absolute;
+    right: 990px;
+  }
+  .ref{
+    position: absolute;
+    left:1030px;
+    top: 10px;
+    z-index: 2;
+    /* top: 90px; */
+  }
+  .container{
+    position: relative;
+    top:80px;
+
+  }
+  .cup{
+    position: relative;
+    width: 280px;
+    height: 300px;
+    background: linear-gradient(to right, #f9f9f9,#a8a5a5);
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+  }
+  .top{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #f9f9f9,#a8a5a5);
+    border-radius: 50%;
+
+  }
+  .circle{
+    position:relative;
+    top: 5px;
+     left: 5px;
+     width: calc(100% -20px);
+     height: 50px;
+     background: linear-gradient(to left, #f9f9f9,#a8a5a5);
+     border-radius: 50%;
+     box-sizing: border-box;
+     width: 270px;
+     overflow: hidden;
+
+  }
+  .tea{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#a6634a,#d16a44);
+    border-radius: 50%;
+  }
+  .haddle{
+    position: absolute;
+    right: -80px;
+    top: 18px;
+    width: 120px;
+    height: 140px;
+    border: 25px solid #a8a5a5;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-radius: 50%;
+    transform: rotate(42deg);
+
+  }
+  .plate{
+    position: absolute;
+    bottom: -50%;
+    left: -108px;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(to right, #f9f9f9,#e7e7e7);
+    border-radius: 50%;
+    box-shadow: 0 35px 35px rgba(0,0,0,0.5);
+  }
+  .plate::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to left,#f9f9f9,#e7e7e7);
+  }
+ .plate::after{
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  background: radial-gradient(rgba(0,0,0,0.5) 25%,transparent,transparent);
+  border-radius: 50%;
+  
+ }
+ .vapour{
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  padding: 0 20px;
+
+ }
+.vapour span{
+  position: relative;
+  bottom: 50px;
+  display: block;
+  margin: 0 2px 50px;
+  min-width: 8px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  animation: animate 5s linear infinite;
+  opacity: 0;
+  filter: blur(8px);
+  animation-delay: calc(var(--i) * -0.5s);
+}
+@keyframes animate{
+  0%{
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15%
+  {
+    opacity: 1;
+  }
+  50%{
+    transform: translateY(-150px) scaleX(5);
+  }
+  95%{
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(-300px) scaleX(10);
+  }
+}
+.button{
+  background-color: rgb(45, 91, 155);
+  padding: 15px 40px ;
+  top: 190px;
+  left: 80px;
+cursor: pointer;
+color: #d8d6d6;
+position: relative;
+z-index: 4;
+border-radius: 12px;
+font-size:medium;
+}

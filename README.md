@@ -1,2 +1,2 @@
 # Web-dev-holiday
-learning HTMl,CSS &amp; JavaScript for the first time
+learning HTMl,CSS and JavaScript for the first time

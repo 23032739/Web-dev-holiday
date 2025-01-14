@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    background-color: rgb( 255, 255, 255);
+}
+.marker{
+ height: 25px;
+ width: 200px;
+ margin:10px auto;/*10px is the heightbetween the three markers*/
+}
+.red{
+    background: linear-gradient(180deg, rgb(118, 30, 40) 0%, rgb(245, 62, 93)50%, rgb(162,27,27)100%) ;
+    box-shadow: 0 0 20px rgb(83,14,14,0.8); 
+/* offsetx offsety color */}
+.green{
+    background: linear-gradient(180deg,#55680D,#71F53E,#116C31);
+    box-shadow: 0 0 20px #3B7E20cc;
+    /*when we use shorthand box shadow we have offsetx
+    it's responsible for right and left movement and offsety is responsible for up and down
+    movement and then we have the blurradius its used for blur effects control the effect of sharpness*/
+}
+.blue{
+background: linear-gradient( hsl(240, 44%, 22%), hsl(240, 42%, 58%), hsl(240, 55%, 21%));
+box-shadow: 0 0 20px 0 hsla(223,59%,31%,0.8);}
+/* the last one or the fourth is the spreadsheet */
+.container{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+
+}
+.sleeve{
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255,255,255,0.5);/*we have redgreenblueaplhavalue*/
+    border-left: 10px double rgba(0,0,0,75%);/*we have a shorthand for the border line (width,style,color)*/
+}
+.cap{
+    width: 60px;
+    height: 25px;
+    
+    
+}
+/* well since we know that both cap and sleeve where competing for 
+Space so which means if we want them to shear the space we 
+can use the Display:inline-block*/
+.sleeve, .cap{
+    display: inline-block;
+}

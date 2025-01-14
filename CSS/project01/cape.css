@@ -37,7 +37,7 @@ fieldset{
     left: -18px; 
     
 }
-input[type="submit"]{
+#submit{
     position: relative;
     top: 60px;
     left: -23px;
